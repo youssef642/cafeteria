@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Create User</title>
-</head>
-<body>
+@extends('./layouts/app')
+@section('title', 'Edit User')
+@section('content')
     <div class="container mt-5">
         <h2 class="mb-4">Edit User</h2>
         <form action="{{ route('users.update', $user->id) }}" method="POST" enctype="multipart/form-data">
@@ -59,8 +52,5 @@
             <button type="submit" class="btn btn-primary">Update</button>
         </form>
     </div>
-</body>
-</html>
+@endsection
 
-</body>
-</html>

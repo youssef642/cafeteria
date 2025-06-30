@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>User</title>
-</head>
-<body>
+@extends('./layouts/app')
+@section('title', 'Users List')
+@section('content')
     <div class="container mt-5">
-        
-    <h2 class="mb-4">Users</h2>
-    <a class="btn btn-success mb-3" href="{{ route('users.create') }}">Create User</a>
+        <h2 class="mb-4">Users</h2>
+        <a class="btn btn-success mb-3" href="{{ route('users.create') }}">Create User</a>
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
             <tr>
@@ -52,5 +44,5 @@
         </tbody>
     </table>
     </container>
-</body>
+@endsection
 </html>
