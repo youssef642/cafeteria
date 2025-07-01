@@ -8,8 +8,9 @@
                 <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
              <a class="nav-link" href="{{ route('products.index') }}">Products</a>
                 <li class="nav-item"><a class="nav-link" href="{{ url('/users') }}">Users</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url('/orders') }}">Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url('/orders') }}">My Orders</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url('/checks') }}">Checks</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url('/admin/orders') }}">Orders_Admin</a></li>
             </ul>
         </div>
     </div>
